@@ -11,11 +11,11 @@ if ($method == "POST") {
 	
 	
 
-	
+
 	// $speech = $date_time;
 	$speech = "No pues si";
 	$response = new \stdClass();
-    $response->speech = "";
+    $response->speech = "fruta";
     $response->displayText= "";
     $response->source = "webhook";
 	echo json_encode($response);
