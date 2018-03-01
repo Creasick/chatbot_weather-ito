@@ -8,9 +8,8 @@ if ($method == "POST") {
     $json = json_decode($requestBody);
 
     $date_time = $json->result->parameters->date_time;
-    $address = $json->result->parameters->address;
-    $unit = $json->result->parameters->unit;
-	$speech = "Entraste al webhook y el clima para $date_time en $address para $unit no lo se";
+    
+    $speech = "Entraste al webhook y el clima para" . $date_time;
 	$response = new \stdClass   ();
 	
     $response-> speech = "HOLA";
