@@ -9,10 +9,10 @@ if ($method == "POST") {
 
     $date_time = $json->result->parameters->date_time;
     
-    $speech = "Entraste al webhook y el clima para" . $date_time;
+    $speech = $date_time;
 	$response = new \stdClass   ();
 	
-    $response-> speech = "HOLA";
+    $response-> speech = "";
     $response-> displayText= "";
     $response-> source ="webhook";
 	echo json_encode($response);
