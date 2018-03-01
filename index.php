@@ -8,8 +8,12 @@ if ($method == "POST") {
     $json = json_decode($requestBody);
 
     $date_time = $json->result->parameters->date_time;
-    
-    $speech = $date_time;
+	
+	
+
+	
+	// $speech = $date_time;
+	$speech = "No pues si";
 	$response = new \stdClass();
     $response->speech = "";
     $response->displayText= "";
